@@ -1,0 +1,186 @@
+body, div, header, footer, nav, li, img, p, h1, h2, a, ul {
+	margin: 0;
+	padding:0;
+	border:0;
+	font-size: 100%;
+	vertical-align:baseline;
+
+}
+
+*, *:before, *:after {
+	box-sizing:border-box;
+	border:0;
+}
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+	width:80%;
+	margin:0 auto;
+	position:relative;
+}
+.logo {
+	width:20%;
+	margin:1em auto;
+	background-color:#fff;
+	border-radius:5px;
+}
+.logo img{
+	width:100%;
+	margin:0 auto;
+}
+
+nav ul {
+	list-style:none;
+
+}
+
+nav ul li {
+	width:25%;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	padding:10px;
+	font-size:18px;
+	text-transform:uppercase;
+
+}
+
+nav ul li a {
+	text-decoration:none;
+	color:rgb(98, 129, 165)
+}
+
+header {
+	background-color:rgb(168,208,255);
+	overflow:hidden;
+}
+
+#hero {
+	background-image:url(../images/sky.jpg) ;
+	height: 320px;
+	background-size: cover;
+	background-position:bottom;
+	background-attachment:fixed;
+}
+
+main {
+	background-color:#EAEAEA;
+}
+
+article {
+	background-color:#fff;
+	width:60%;
+	margin-left:30%;
+	margin-right:10%;
+	line-height:1.5;
+	position:relative;
+	bottom:5em;
+}
+
+article h1 {
+	font-size:1.8em;
+}
+
+article h2 {
+	font-size:1.5em;
+	text-align:right;
+	font-family:cursive;
+}
+
+
+/* this is an example, coded elsewhere in css 
+article::before {
+	content:"";
+	display:block;
+	height:75px; 
+	background-color:#fff;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:-75px;
+	background-image:url(../images/mail.png);
+	background-repeat:repeat-x or repeat-y;
+}
+*/
+
+.border {
+	border-top:16px solid transparent;
+	-webkit-border-image:url(../images/mail.png) 16 0 repeat;
+	border-bottom:0;
+	padding:3em;
+}
+
+footer {
+	height:5em;
+	background-color:#000;
+	color:#fff;
+	text-align:center;
+	padding:2.3em;
+}
+
+.avatar {
+-webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+	position:absolute;
+}
+.avatar:hover
+{
+-webkit-transform: translate(-5em,-0em);
+            -moz-transform: translate(3em,0);
+            -o-transform: translate(3em,0);
+            -ms-transform: translate(3em,0);
+}
+
+.avatar img{
+	height:300px;
+	width:300px;
+	border:15px solid gray;
+	border-radius: 50%;
+	position:relative;
+	left:100%;
+}
+@media (min-width:400px) and (max-width:700px){
+	header {
+		background-color:red;
+	}
+}
+}
+
+/*TRANSITION SYNTAX
+
+IMG {
+	TRANSITION: LEFT 350MS EASE-IN-OUT;
+}
+
+IMG::HOVER {
+	LEFT:0%;
+
+
+
+
+===============MEDIA QUERY=========================
+
+@MEDIA (MAX-WIDTH:400PX) {
+	WRITE CODE YOU WANT CHANGED WHEN VIEWPORTAL SIZE IS CHANGED
+	NAV UL LI {
+	WIDTH:100%;
+	DISPLAY:BLOCK; THIS WILL MAKE IT STACK ON TOP INSTEAD OF BEING INLINE
+	}
+
+	ARTICLE {
+	WIDTH:90%;
+	DISPLAY:BLOCK;
+	}
+}
+
+*/
